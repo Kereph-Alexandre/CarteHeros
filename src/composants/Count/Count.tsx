@@ -13,7 +13,7 @@ export const Count: React.FC = (props) => {
 
   return (
     <div className="count">
-      <h2>{count}</h2>
+      <span>{count}</span>
       <button className="button" onClick={() => setCount(count + 1)}>
         +
       </button>
