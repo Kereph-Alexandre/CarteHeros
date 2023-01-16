@@ -1,12 +1,12 @@
 import "./App.css";
 
 import React from "react";
-import { HeroLists } from "./pages/heroLists";
+import Router from "./routes/routes";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <HeroLists />
+      <Router />
     </div>
   );
 };
