@@ -1,4 +1,4 @@
-export default class Heros {
+export default class superHeros {
   id: number;
   name: string;
   image: string;

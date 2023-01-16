@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { CardHero } from "../composants/CardHero/cardHero";
 import { heros } from "../data/heros";
 import Heros from "../models/superHeros";
@@ -11,7 +12,9 @@ export const HeroLists: React.FC = () => {
   return (
     <div className="heros">
       {heroList.map((hero) => (
-        <CardHero key={hero.id} superHero={hero} />
+        <Link to={`/HeroDetails/${hero.id}`}>
+          <CardHero key={hero.id} superHero={hero} />
+        </Link>
       ))}
     </div>
   );
