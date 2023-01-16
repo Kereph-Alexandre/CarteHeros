@@ -1,9 +1,8 @@
-.App {
-  width: 80%;
+.heros {
+  width: 100%;
   justify-content: center;
   display: flex;
-  gap: 2em;
+  gap: 1em;
 
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 0 0 auto;
 }
