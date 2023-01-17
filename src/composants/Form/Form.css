@@ -1,0 +1,18 @@
+.formulaire {
+  padding: 50px;
+  background-color: #cecece6c;
+
+  border-radius: 25px;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.formPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}

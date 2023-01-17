@@ -2,13 +2,15 @@ import "./App.css";
 
 import React from "react";
 import Router from "./routes/routes";
-import { Header } from "./composants/communs/header/header";
+import { Header } from "./communs/header/header";
+import { Footer } from "./communs/footer/footer";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
       <Router />
+      <Footer />
     </div>
   );
 };
