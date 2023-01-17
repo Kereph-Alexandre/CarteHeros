@@ -1,4 +1,4 @@
-import superHeros from "../models/superHeros";
+import superHeros from "../models/HeroModel";
 
 export const heros: superHeros[] = [
   {

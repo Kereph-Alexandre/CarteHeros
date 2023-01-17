@@ -4,6 +4,7 @@ import { HeroDetails } from "../pages/HeroDetails";
 import { FormExo } from "../composants/Form/Form";
 import { Get } from "../composants/Fetch/Get/Get";
 import { GetId } from "../composants/Fetch/Get/GetId";
+import { HeroEdit } from "../pages/HeroEdit/HeroEdit";
 
 const Router: React.FC = () => {
   const routes: RouteObject[] = [
@@ -26,6 +27,10 @@ const Router: React.FC = () => {
     {
       path: "/Form",
       element: <FormExo />,
+    },
+    {
+      path: "/HeroEdit/:id",
+      element: <HeroEdit />,
     },
   ];
 

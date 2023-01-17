@@ -2,5 +2,6 @@
   width: 100%;
   object-fit: cover;
 
-  height: 20vh;
+  height: 30vh;
+  object-position: 0 40%;
 }

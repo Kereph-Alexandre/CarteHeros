@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
     <Link to={`/HeroList`}>
       <footer className="footerGeneral">
         <img
-          src="https://mmos.com/wp-content/uploads/2021/12/dc-universe-online-ep-42-legion-of-doom-key-art-banner.jpg"
+          src="https://variety.com/wp-content/uploads/2013/10/necessaryevil.jpg"
           alt="DC Comics Banner"
         />
       </footer>

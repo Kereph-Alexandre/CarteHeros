@@ -1,7 +1,7 @@
 import { HeroFile } from "../composants/HeroFile/HeroFile";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import superHeros from "../models/superHeros";
+import superHeros from "../models/HeroModel";
 
 export const HeroDetails: React.FC = () => {
   const { id } = useParams<string>();

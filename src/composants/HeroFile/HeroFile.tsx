@@ -1,5 +1,7 @@
-import superHeros from "../../models/superHeros";
+import { Link } from "react-router-dom";
+import superHeros from "../../models/HeroModel";
 import "./HeroFile.css";
+import { FiEdit } from "react-icons/fi";
 
 type CardProps = {
   superHero: superHeros;
@@ -14,6 +16,11 @@ export const HeroFile: React.FC<CardProps> = ({ superHero }) => {
       </header>
       <div className="heroFile">
         <div className="summerize">
+          <Link to={`/HeroEdit/${superHero.id}`}>
+            <button>
+              <FiEdit />
+            </button>
+          </Link>
           <p>
             {superHero.name} opère la plupart du temps à {superHero.ville}.
           </p>

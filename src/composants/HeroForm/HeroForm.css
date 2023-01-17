@@ -1,0 +1,10 @@
+.heroForm {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50vw;
+}
+
+.heroForm img {
+  object-fit: cover;
+  width: 50%;
+}

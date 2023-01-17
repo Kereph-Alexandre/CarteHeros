@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CardHero } from "../../composants/CardHero/cardHero";
-import Heros from "../../models/superHeros";
+import Heros from "../../models/HeroModel";
 
 import "./herosList.css";
 
