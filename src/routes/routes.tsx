@@ -1,5 +1,5 @@
 import { RouteObject, useRoutes } from "react-router-dom";
-import { HeroLists } from "../pages/heroLists";
+import { HeroLists } from "../pages/herosList";
 import { Count } from "../composants/Count/Count";
 import { HeroDetails } from "../pages/HeroDetails";
 

@@ -4,6 +4,8 @@ import { CardHero } from "../composants/CardHero/cardHero";
 import { heros } from "../data/heros";
 import Heros from "../models/superHeros";
 
+import "./herosList.css";
+
 export const HeroLists: React.FC = () => {
   const [heroList, setHeroList] = useState<Array<Heros>>([]);
 
