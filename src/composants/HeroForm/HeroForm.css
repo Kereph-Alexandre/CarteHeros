@@ -1,10 +1,53 @@
-.heroForm {
+.formContainer {
   display: flex;
-  flex-flow: column wrap;
-  width: 50vw;
+  width: 100%;
 }
 
-.heroForm img {
+.formContainer img {
   object-fit: cover;
-  width: 50%;
+}
+
+.heroForm {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  padding: 2em;
+}
+
+.heroForm > label {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.heroForm > input[type="submit"] {
+  align-self: Center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  background: rgba(141, 1, 1, 0.5);
+  padding: 0.5em;
+  border-radius: 15px;
+  box-shadow: 4px 4px 2px rgb(60, 0, 0);
+  border: 0;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.heroForm input[type="submit"]:active {
+  background: rgb(60, 0, 0);
+  border: 2px solid #ffffff;
+}
+
+.heroForm input[type]:not([type="submit"]) {
+  padding: 1em;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 2px 2px 2px rgb(60, 0, 0);
+  background-color: rgb(150, 150, 0, 0.3);
+}
+
+.heroForm input[type]:not([type="submit"]):focus {
+  background: rgba(100, 0, 0, 0.5);
 }

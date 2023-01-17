@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { HeroForm } from "../../composants/HeroForm/HeroForm";
 import HeroModel from "../../models/HeroModel";
+import "./HeroEdit.css";
 
 export const HeroEdit: React.FC = () => {
   const [hero, setHero] = useState<HeroModel>();

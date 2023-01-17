@@ -55,41 +55,43 @@ export const HeroForm: React.FC<HeroProp> = ({ heroProp }) => {
   };
 
   return (
-    <form className="heroForm" onSubmit={soumission}>
+    <div className="formContainer">
       <img src={heroProp.image} alt={heroProp.name} />
-      <label htmlFor="name">SuperIdentité : </label>
-      <input
-        type="text"
-        name="name"
-        value={heroForm.name.value}
-        onChange={editHero}
-      />
+      <form className="heroForm" onSubmit={soumission}>
+        <label htmlFor="name">SuperIdentité : </label>
+        <input
+          type="text"
+          name="name"
+          value={heroForm.name.value}
+          onChange={editHero}
+        />
 
-      <label htmlFor="age">Age : </label>
-      <input
-        type="number"
-        name="age"
-        value={heroForm.age.value}
-        onChange={editHero}
-      />
+        <label htmlFor="age">Age : </label>
+        <input
+          type="number"
+          name="age"
+          value={heroForm.age.value}
+          onChange={editHero}
+        />
 
-      <label htmlFor="ville">Ville : </label>
-      <input
-        type="text"
-        name="ville"
-        value={heroForm.ville.value}
-        onChange={editHero}
-      />
+        <label htmlFor="ville">Ville : </label>
+        <input
+          type="text"
+          name="ville"
+          value={heroForm.ville.value}
+          onChange={editHero}
+        />
 
-      <label htmlFor="civil">Identité secrète : </label>
-      <input
-        type="text"
-        name="civil"
-        value={heroForm.civil.value}
-        onChange={editHero}
-      />
+        <label htmlFor="civil">Identité secrète : </label>
+        <input
+          type="text"
+          name="civil"
+          value={heroForm.civil.value}
+          onChange={editHero}
+        />
 
-      <input type="submit" value="SuperKamel" />
-    </form>
+        <input type="submit" value="SuperKamel" />
+      </form>
+    </div>
   );
 };
