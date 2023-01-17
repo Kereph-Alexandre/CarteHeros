@@ -1,14 +1,12 @@
 import { RouteObject, useRoutes } from "react-router-dom";
 import { HeroLists } from "../pages/HeroList/herosList";
-import { Count } from "../composants/Count/Count";
 import { HeroDetails } from "../pages/HeroDetails";
+import { FormExo } from "../composants/Form/Form";
+import { Get } from "../composants/Fetch/Get/Get";
+import { GetId } from "../composants/Fetch/Get/GetId";
 
 const Router: React.FC = () => {
   const routes: RouteObject[] = [
-    {
-      path: "/Count",
-      element: <Count />,
-    },
     {
       path: "/HeroList",
       element: <HeroLists />,
@@ -16,6 +14,18 @@ const Router: React.FC = () => {
     {
       path: "/HeroDetails/:id",
       element: <HeroDetails />,
+    },
+    {
+      path: "/fetch",
+      element: <Get />,
+    },
+    {
+      path: "/fetch/:id",
+      element: <GetId />,
+    },
+    {
+      path: "/Form",
+      element: <FormExo />,
     },
   ];
 
