@@ -1,7 +1,15 @@
 .heros {
   display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .heros a {
   text-decoration: none;
+  color: rgb(0, 123, 255);
+}
+.heros a:hover {
+  text-decoration: none;
+  color: rgb(2, 61, 124);
 }

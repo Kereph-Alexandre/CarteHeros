@@ -1,20 +1,28 @@
 import { HeroFile } from "../composants/HeroFile/HeroFile";
 import { heros } from "../data/heros";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import superHeros from "../models/superHeros";
 
 export const HeroDetails: React.FC = () => {
-  const { id } = useParams();
-  let hero: any = heros[0];
+  const { id } = useParams<string>();
+  const [heroChosen, setHeroChosen] = useState<superHeros>();
 
-  if (id) {
-    if (heros.find((hero) => hero.id === +id)) {
-      hero = heros.find((hero) => hero.id === +id);
+  useEffect(() => {
+    if (id) {
+      heros.forEach((hero) => {
+        if (hero.id === +id) {
+          setHeroChosen(hero);
+        }
+      });
     }
-  }
+  }, [id]);
 
-  return (
-    <>
-      <HeroFile superHero={hero} />
-    </>
-  );
+  if (heroChosen) {
+    return (
+      <>
+        <HeroFile superHero={heroChosen} />
+      </>
+    );
+  } else return <></>;
 };

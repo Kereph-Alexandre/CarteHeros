@@ -25,4 +25,12 @@ export const heros: superHeros[] = [
     age: 30,
     ville: "Coast City",
   },
+  {
+    id: 4,
+    name: "Wonder Woman",
+    image: "https://www.superherodb.com/gallery2/075/476/47607.webp",
+    civil: "Diana Prince",
+    age: 3000,
+    ville: "Washington, D.C.",
+  },
 ];
