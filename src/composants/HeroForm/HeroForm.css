@@ -1,3 +1,9 @@
+.totalForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .formContainer {
   display: flex;
   width: 100%;

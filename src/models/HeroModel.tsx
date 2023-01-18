@@ -8,11 +8,11 @@ export default class HeroModel {
 
   constructor(
     id: number,
-    name: string,
-    image: string,
-    civil: string,
-    age: number,
-    ville: string
+    name: string = "",
+    image: string = "",
+    civil: string = "",
+    age: number = 0,
+    ville: string = ""
   ) {
     this.id = id;
     this.name = name;

@@ -22,7 +22,7 @@ export const HeroEdit: React.FC = () => {
       {hero?.id ? (
         <>
           <h2>Editer : {hero?.name}</h2>
-          <HeroForm heroProp={hero} />
+          <HeroForm heroProp={hero} AddHero={false} />
         </>
       ) : (
         <>

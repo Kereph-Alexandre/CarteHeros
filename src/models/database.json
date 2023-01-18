@@ -1,22 +1,6 @@
 {
   "superHeros": [
     {
-      "id": 1,
-      "name": "Batman",
-      "image": "https://www.superherodb.com/gallery2/075/395/39568.webp",
-      "civil": "Bruce Wayne",
-      "age": 35,
-      "ville": "Gotham City"
-    },
-    {
-      "id": 2,
-      "name": "Superman",
-      "image": "https://www.superherodb.com/gallery2/075/475/47594.webp",
-      "civil": "Clark Kent",
-      "age": 28,
-      "ville": "Metropolis"
-    },
-    {
       "id": 3,
       "name": "Green Lantern",
       "image": "https://www.superherodb.com/gallery2/075/181/18105.webp",
@@ -31,6 +15,22 @@
       "civil": "Diana Prince",
       "age": 3000,
       "ville": "Washington, D.C."
+    },
+    {
+      "id": 5,
+      "name": "Batman",
+      "image": "https://www.superherodb.com/gallery2/075/395/39568.webp",
+      "civil": "Bruce Wayne",
+      "age": "30",
+      "ville": "Gotham"
+    },
+    {
+      "id": 6,
+      "name": "Superman",
+      "image": "https://www.superherodb.com/gallery2/075/475/47594.webp",
+      "civil": "Clark Kent",
+      "age": "33",
+      "ville": "Metropolis"
     }
   ]
 }
