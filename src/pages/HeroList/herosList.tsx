@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CardHero } from "../../composants/CardHero/cardHero";
 import Heros from "../../models/HeroModel";
+import HeroService from "../../services/heroService";
 
 import "./herosList.css";
 
@@ -9,11 +10,9 @@ export const HeroLists: React.FC = () => {
   const [heroList, setHeroList] = useState<Array<Heros>>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3004/superHeros")
-      .then((response) => response.json())
-      .then((data) => {
-        setHeroList(data);
-      });
+    HeroService.getHeroes().then((data) => {
+      setHeroList(data);
+    });
   }, []);
 
   console.log(heroList);

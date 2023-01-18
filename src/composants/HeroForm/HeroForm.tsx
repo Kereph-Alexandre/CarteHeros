@@ -90,7 +90,7 @@ export const HeroForm: React.FC<HeroProp> = ({ heroProp }) => {
           onChange={editHero}
         />
 
-        <input type="submit" value="SuperKamel" />
+        <input type="submit" value="Valider" />
       </form>
     </div>
   );
